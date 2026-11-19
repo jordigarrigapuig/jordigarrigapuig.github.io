@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jordi Garriga Puig</title>
+  <meta name="description" content="Jordi Garriga Puig, doctorand en Matemàtiques a la Universitat de Barcelona. Grups de transformacions i accions de grups finits en varietats.">
+  <!-- Tab icon (torus) and iPhone/iPad home-screen icon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#8a2b1e">
+
+  <!-- Link preview (WhatsApp, Slack, email, social media). The image source is og-image.svg.
+       Previews need the full address of the image; change it here if the site moves. -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Jordi Garriga Puig">
+  <meta property="og:description" content="Doctorand en Matemàtiques a la Universitat de Barcelona. Grups de transformacions i accions de grups finits en varietats.">
+  <meta property="og:image" content="https://jordigarrigapuig.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jordi Garriga Puig, Universitat de Barcelona. Topologia algebraica i geomètrica, grups de transformacions.">
+  <meta property="og:url" content="https://jordigarrigapuig.github.io/">
+  <meta property="og:locale" content="ca_ES">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts are served from this folder (fonts/), not from Google, so visitors' IPs are not sent to a third party. -->
+  <link rel="preload" href="fonts/EBGaramond-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--
+    HOW SECTIONS WORK
+    - Each section below is a <details class="section"> block. Visitors can click
+      its heading to collapse or expand it.
+    - Sections start collapsed. To have one start open, add the word "open" to
+      its <details> tag, e.g. <details class="section" id="talks" open>.
+      Clicking a section in the menu always opens it.
+    - To hide a section from the site completely, add the word "hidden" to its
+      <details> tag AND to its link in the menu, e.g. <li hidden>.
+    - The contact details are in the header under the name; the "Contact" menu
+      link scrolls back to the top of the page.
+
+    HOW LANGUAGES WORK
+    - Catalan is the default language. Every piece of text appears twice: once
+      marked data-lang="ca" and once marked data-lang="en" (each also has the
+      matching lang="…"). The CA / EN switch in the menu shows one and hides the
+      other, and remembers the visitor's choice.
+    - When you add or change something, edit both versions.
+    - Text without data-lang shows in both languages. If it is written in another
+      language (English paper titles, Spanish conference names), mark it with
+      lang="en" or lang="es" so screen readers pronounce it correctly. Never use
+      data-lang for that: data-lang hides the text in the other version.
+    - A link like yoursite/?lang=en opens the page directly in English.
+
+    THINGS THAT UPDATE THEMSELVES
+    - An "upcoming" tag disappears after the date in its data-until="YYYY-MM-DD"
+      (use the last day of the event). Add the same attribute to new tags.
+    - The footer year and "last updated" month come from the date and from the
+      server; you don't need to edit them.
+  -->
+
+  <nav>
+    <ul>
+      <li><a href="#publications"><span lang="en" data-lang="en">Publications</span><span lang="ca" data-lang="ca">Publicacions</span></a></li>
+      <li><a href="#thesis"><span lang="en" data-lang="en">Theses</span><span lang="ca" data-lang="ca">Tesis</span></a></li>
+      <li><a href="#talks"><span lang="en" data-lang="en">Talks</span><span lang="ca" data-lang="ca">Xerrades</span></a></li>
+      <li><a href="#posters"><span lang="en" data-lang="en">Posters</span><span lang="ca" data-lang="ca">Pòsters</span></a></li>
+      <li><a href="#teaching"><span lang="en" data-lang="en">Teaching</span><span lang="ca" data-lang="ca">Docència</span></a></li>
+      <li><a href="#about"><span lang="en" data-lang="en">Contact</span><span lang="ca" data-lang="ca">Contacte</span></a></li>
+      <li class="lang-switch">
+        <button type="button" data-set-lang="ca" aria-label="Català">CA</button><span aria-hidden="true">/</span><button type="button" data-set-lang="en" aria-label="English">EN</button>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ========== HEADER ========== -->
+    <header id="about" class="intro">
+      <!-- Put a square photo named photo.jpg in this folder and it will appear here -->
+      <img class="portrait" src="photo.jpg" alt="Jordi Garriga Puig"
+           onerror="this.style.display='none'">
+      <h1>Jordi Garriga Puig</h1>
+      <p class="position">
+        <span lang="en" data-lang="en">Universitat de Barcelona</span>
+        <span lang="ca" data-lang="ca">Universitat de Barcelona</span>
+      </p>
+      <address class="contact-info">
+        <a href="mailto:jordi.garrigapuig@ub.edu">jordi.garrigapuig@ub.edu</a><br>
+        <span lang="ca">Departament de Matemàtiques i Informàtica</span><br>
+        Gran Via de les Corts Catalanes 585, 08007 Barcelona<br>
+        <span lang="en" data-lang="en">Office P1 05</span><span lang="ca" data-lang="ca">Despatx P1 05</span>
+      </address>
+      <!-- To add profile links under the contact details, uncomment and edit:
+      <p class="links">
+        <a href="https://orcid.org/0000-0000-0000-0000">ORCID</a>
+        <a href="https://arxiv.org/a/your_id">arXiv</a>
+      </p>
+      -->
+    </header>
+
+    <div class="bio">
+      <div lang="en" data-lang="en">
+        <p>
+          I am a third-year PhD student in Mathematics at the
+          <a href="https://www.ub.edu/web/portal/en/">Universitat de Barcelona</a>,
+          supervised by Ignasi Mundet i Riera,
+          and supported by an FPU fellowship from the Spanish Ministry of Science, Innovation and Universities (FPU22/03443).
+        </p>
+        <p>
+          I work in algebraic and geometric topology, in particular on
+          <em>transformation groups</em>: I study which finite groups can act on a
+          given manifold, and what large symmetry groups reveal about the topology
+          of the manifold itself.
+        </p>
+        <p>
+          In my doctoral thesis I study actions of finite abelian groups on a fixed
+          manifold. The central invariant is the <em>discrete degree of symmetry</em>: the
+          largest <i>m</i> such that the manifold admits effective actions of
+          (ℤ/<i>r</i>)<sup><i>m</i></sup> for arbitrarily large <i>r</i>, a finite-group
+          analogue of the classical toral degree of symmetry. One of the central questions
+          is whether this invariant is always bounded by the dimension of the manifold,
+          with equality only for tori. I am currently working on how it behaves for products of
+          manifolds.
+        </p>
+      </div>
+      <div lang="ca" data-lang="ca">
+        <p>
+          Soc estudiant de tercer any de doctorat en Matemàtiques a la
+          <a href="https://www.ub.edu/web/portal/ca/">Universitat de Barcelona</a>,
+          sota la supervisió d'Ignasi Mundet i Riera,
+          i amb el suport d'un contracte FPU del Ministeri de Ciència, Innovació i Universitats (FPU22/03443).
+        </p>
+        <p>
+          Treballo en topologia algebraica i geomètrica, en particular en
+          <em>grups de transformacions</em>: estudio quins grups finits poden actuar
+          sobre una varietat donada i què revelen els grups de simetria grans sobre
+          la topologia de les varietats.
+        </p>
+        <p>
+          En la meva tesi doctoral estudio accions de grups abelians finits sobre una varietat
+          fixada. L'invariant central és el <em>grau discret de simetria</em>: el màxim
+          <i>m</i> tal que la varietat admet accions efectives de
+          (ℤ/<i>r</i>)<sup><i>m</i></sup> per a <i>r</i> arbitràriament gran, un anàleg
+          per a grups finits del grau toral de simetria clàssic. Una de les preguntes
+          centrals és si aquest invariant està sempre fitat per la dimensió de la
+          varietat, amb igualtat només per als tors. Actualment treballo en com es comporta en productes de
+          varietats.
+        </p>
+      </div>
+    </div>
+
+    <!-- ========== PUBLICATIONS AND PREPRINTS ========== -->
+    <details class="section" id="publications">
+      <summary><h2><span lang="en" data-lang="en">Publications and preprints</span><span lang="ca" data-lang="ca">Publicacions i preprints</span></h2></summary>
+      <!-- Newest first. Copy one <li> block per paper and wrap your own name in <span class="me">.
+           Abstracts stay in English, the language of the papers. -->
+      <ol class="pubs">
+        <li>
+          <span class="me">Garriga Puig, J.</span>, &amp; <a href="https://sites.google.com/view/jordidauraserrano">Daura Serrano, J.</a>
+          <span class="title" lang="en">Large symmetries of mapping tori with simply connected fibre.</span>
+          <span class="venue"><span lang="en" data-lang="en">In preparation</span><span lang="ca" data-lang="ca">En preparació</span></span>.
+        </li>
+        <li>
+          <a href="https://sites.google.com/view/jordidauraserrano">Daura Serrano, J.</a>, <span class="me">Garriga Puig, J.</span>, &amp; <a href="https://igkeneralis.gr">Gkeneralis, I.</a> (2026).
+          <span class="title" lang="en">Quaternionic torus actions on manifolds.</span>
+          <span class="venue">Preprint</span>, arXiv:2611.24566 [math.DG].
+          <span class="extra"><a href="https://arxiv.org/abs/2611.24566">arXiv</a><a href="https://arxiv.org/pdf/2611.24566">PDF</a></span>
+          <details class="abstract">
+            <summary><span lang="en" data-lang="en">Abstract</span><span lang="ca" data-lang="ca">Resum</span></summary>
+            <p lang="en">
+              We study smooth actions of quaternionic tori SU(2)<sup><i>r</i></sup> on closed,
+              connected smooth manifolds, establishing sharp bounds for <i>r</i> in terms of the
+              dimension of the manifold when the action is either effective, effective
+              almost-free, or almost-effective. In particular, we prove that an
+              almost-effective SU(2)<sup><i>r</i></sup>-action on an <i>n</i>-dimensional manifold
+              satisfies <i>r</i> ≤ ⌊2<i>n</i>/3⌋, and we classify up to diffeomorphism all simply
+              connected manifolds attaining the maximal possible rank. This gives a quaternionic
+              counterpart of the maximal symmetry rank conjecture without any curvature
+              assumption. We also establish the bounds <i>r</i> ≤ <i>n</i>/3 for effective and
+              effective almost-free quaternionic torus actions, and we compute the exact value
+              for spheres, quoric manifolds, or manifolds of the form
+              (<i>S</i><sup>3</sup>)<sup><i>a</i></sup> × (<i>S</i><sup>1</sup>)<sup><i>b</i></sup>.
+            </p>
+          </details>
+        </li>
+      </ol>
+    </details>
+
+    <!-- ========== THESIS ========== -->
+    <details class="section" id="thesis">
+      <summary><h2><span lang="en" data-lang="en">Theses</span><span lang="ca" data-lang="ca">Tesis</span></h2></summary>
+
+      <h3><span lang="en" data-lang="en">Master's thesis</span><span lang="ca" data-lang="ca">Treball de final de màster</span>: <em lang="en"><a href="https://hdl.handle.net/2445/202123">Equivariant cohomology and free (ℤ/2)<sup>n</sup>-complexes</a></em></h3>
+      <p class="meta">
+        <span lang="en" data-lang="en">2023 · Master in Advanced Mathematics, Universitat de Barcelona · Supervisor: Ignasi Mundet i Riera</span>
+        <span lang="ca" data-lang="ca">2023 · Màster en Matemàtica Avançada, Universitat de Barcelona · Director: Ignasi Mundet i Riera</span>
+      </p>
+      <details class="abstract">
+        <summary><span lang="en" data-lang="en">Abstract</span><span lang="ca" data-lang="ca">Resum</span></summary>
+        <div lang="en" data-lang="en">
+          <p>
+            The field of transformation groups studies continuous actions of groups on
+            topological spaces, in particular on CW-complexes. One of the fundamental questions
+            that arises in this context is to determine those finite groups that can act
+            effectively on a given topological space. A large number of results are known about
+            this issue, but it is not completely answered yet. Even in the case of abelian group
+            actions or elementary group actions the question is highly nontrivial.
+          </p>
+          <p>
+            This project is devoted to a remarkable result regarding the description of those
+            finite abelian groups that act freely on a CW-complex. The result states that if
+            <i>X</i> is a finite CW-complex and (ℤ/<i>p</i>)<sup><i>n</i></sup> acts freely on
+            <i>X</i>, with <i>p</i> prime, then the sum of the lengths of the homology groups of
+            <i>X</i> with coefficients in ℤ/<i>p</i> is bounded below by <i>n</i> + 1. Our study
+            has been restricted to the case <i>p</i> = 2, which was proved by Carlsson in 1983,
+            with a modern approach based on cohomological methods.
+          </p>
+        </div>
+        <div lang="ca" data-lang="ca">
+          <p>
+            La teoria de grups de transformacions estudia les accions contínues de grups sobre
+            espais topològics, en particular sobre CW-complexos. Una de les preguntes fonamentals
+            que sorgeixen en aquest context és determinar quins grups finits poden actuar
+            efectivament sobre un espai topològic donat. Se'n coneixen molts resultats, però
+            encara no hi ha una resposta completa. Fins i tot en el cas d'accions de grups
+            abelians o de grups elementals, la pregunta és molt poc trivial.
+          </p>
+          <p>
+            Aquest treball està dedicat a un resultat notable sobre la descripció dels grups
+            abelians finits que actuen lliurement sobre un CW-complex. El resultat afirma que, si
+            <i>X</i> és un CW-complex finit i (ℤ/<i>p</i>)<sup><i>n</i></sup> actua lliurement sobre
+            <i>X</i>, amb <i>p</i> primer, aleshores la suma de les longituds dels grups
+            d'homologia de <i>X</i> amb coeficients en ℤ/<i>p</i> està fitada inferiorment per
+            <i>n</i> + 1. El nostre estudi s'ha restringit al cas <i>p</i> = 2, demostrat per
+            Carlsson el 1983, amb un enfocament modern basat en mètodes cohomològics.
+          </p>
+        </div>
+      </details>
+
+      <h3><span lang="en" data-lang="en">Bachelor's thesis in Mathematics: <em><a href="https://hdl.handle.net/2445/189761">Cubic surfaces and quartic curves</a></em></span><span lang="ca" data-lang="ca">Treball de final de grau de Matemàtiques: <em><a href="https://hdl.handle.net/2445/189761">Superfícies cúbiques i corbes quàrtiques</a></em></span></h3>
+      <p class="meta">
+        <span lang="en" data-lang="en">2022 · BSc Mathematics, Universitat de Barcelona · Supervisor: Joan Carles Naranjo del Val</span>
+        <span lang="ca" data-lang="ca">2022 · Grau en Matemàtiques, Universitat de Barcelona · Director: Joan Carles Naranjo del Val</span>
+      </p>
+      <details class="abstract">
+        <summary><span lang="en" data-lang="en">Abstract</span><span lang="ca" data-lang="ca">Resum</span></summary>
+        <p lang="en" data-lang="en">
+          In Algebraic Geometry the numbers 27 and 28 are usually associated with two
+          well-known classical results: every smooth cubic surface contains 27 distinct lines,
+          and every smooth plane quartic has 28 bitangents. The aim of this work is to
+          establish a relation between these two statements. First, we introduce the
+          theoretical background needed to prove the two classical results. In the final part,
+          we propose a method by which the 27 lines contained in a cubic surface can be
+          transformed into bitangents of a plane quartic and, also from the surface, an
+          additional bitangent can be formed, so that we ultimately obtain the 28 bitangents.
+        </p>
+        <p lang="ca" data-lang="ca">
+          En Geometria Algebraica, els nombres 27 i 28 s'associen de manera natural a dos
+          resultats clàssics ben coneguts. Tota superfície cúbica regular conté 27 rectes i tota
+          corba plana quàrtica regular té 28 rectes bitangents. En aquest treball se'ns planteja
+          el problema de trobar una relació entre aquests dos resultats clàssics. En la primera
+          part del treball, ens hem centrat en establir la base teòrica necessària per poder
+          demostrar els dos resultats. En la part final, hem proposat un mètode per veure que
+          les 27 rectes contingudes en una superfície cúbica es poden transformar en rectes
+          bitangents a una corba plana quàrtica i, també a partir de la superfície, podem
+          construir una darrera recta bitangent que ens permet recuperar les 28 bitangents de
+          la corba.
+        </p>
+      </details>
+
+      <h3><span lang="en" data-lang="en">Bachelor's thesis in Physics</span><span lang="ca" data-lang="ca">Treball de final de grau de Física</span>: <em lang="en"><a href="https://hdl.handle.net/2445/189770">Dichroism in a plasmonic lattice based on triskelion nanoelements</a></em></h3>
+      <p class="meta">
+        <span lang="en" data-lang="en">2022 · BSc Physics, Universitat de Barcelona · Supervisor: Amílcar Labarta</span>
+        <span lang="ca" data-lang="ca">2022 · Grau en Física, Universitat de Barcelona · Tutor: Amílcar Labarta</span>
+      </p>
+      <details class="abstract">
+        <summary><span lang="en" data-lang="en">Abstract</span><span lang="ca" data-lang="ca">Resum</span></summary>
+        <p lang="en" data-lang="en">
+          Dichroism is the different optical response obtained for left or right circular
+          polarised light and characteristically occurs in chiral systems. This work is focused
+          on enhancing the dichroism observed in the plasmonic response of Au planar
+          nanoelements (triskelion) showing helicity. Numerical simulations have been performed
+          to study the electromagnetic response of these systems. First, a free-standing
+          triskelion has been studied to obtain its natural response. Then, a triskelion on a
+          silica substrate and two stacked free-standing triskelia have been considered so as to
+          observe the response of 3-dimensional true chiral structures. Finally, a hexagonal
+          array of the triskelion stack has been tested to analyse the hybridisation of
+          localised and collective modes.
+        </p>
+        <p lang="ca" data-lang="ca">
+          El dicroisme és la resposta òptica diferent que s'obté amb llum polaritzada
+          circularment cap a l'esquerra o cap a la dreta, i és característic dels sistemes
+          quirals. Aquest treball se centra a augmentar el dicroisme observat en la resposta
+          plasmònica de nanoelements plans d'or amb forma de trisquel, que presenten helicitat.
+          S'han fet simulacions numèriques per estudiar la resposta electromagnètica d'aquests
+          sistemes. Primer, s'ha estudiat un trisquel aïllat per obtenir-ne la resposta natural.
+          Després, s'han considerat un trisquel sobre un substrat de sílice i dos trisquels
+          aïllats apilats, per observar la resposta d'estructures tridimensionals veritablement
+          quirals. Finalment, s'ha analitzat una xarxa hexagonal de trisquels apilats per
+          estudiar la hibridació dels modes localitzats i col·lectius.
+        </p>
+      </details>
+    </details>
+
+    <!-- ========== TALKS ========== -->
+    <!-- Newest first. Every entry ends with month and year in both languages. -->
+    <details class="section" id="talks">
+      <summary><h2><span lang="en" data-lang="en">Talks</span><span lang="ca" data-lang="ca">Xerrades</span></h2></summary>
+      <ul class="plain">
+        <li><span lang="en">“Symmetries of mapping tori”</span> <span class="tag" data-until="2027-01-22"><span lang="en" data-lang="en">upcoming</span><span lang="ca" data-lang="ca">properament</span></span>
+          <span class="meta">— <a lang="es" data-lang="en" href="https://jovenesrsme27.unizar.es/en/home/">VIII Congreso de Jóvenes Investigadores de la RSME</a><a lang="es" data-lang="ca" href="https://jovenesrsme27.unizar.es/">VIII Congreso de Jóvenes Investigadores de la RSME</a>, Zaragoza,
+            <span lang="en" data-lang="en">January 2027</span><span lang="ca" data-lang="ca">gener de 2027</span></span></li>
+        <li><span lang="en">“Large symmetries of mapping tori with simply connected fibre”</span>
+          <span class="meta">— <a lang="es" href="https://www.unirioja.es/cu/jodivaso/events/et2026/">XIV Encuentro de Jóvenes Topólogos</a>, Logroño,
+            <span lang="en" data-lang="en">October 2026</span><span lang="ca" data-lang="ca">octubre de 2026</span></span></li>
+        <li><span lang="en">“Actions of large finite abelian groups on product manifolds”</span>
+          <span class="meta">—
+            <span lang="en" data-lang="en"><a href="https://mat.uab.cat/web/rtgf2025/">Meeting of the Spanish Network of Geometry and Physics</a>, Barcelona, September 2025</span>
+            <span lang="ca" data-lang="ca"><a href="https://mat.uab.cat/web/rtgf2025/">Trobada de la Red Temática de Geometría y Física</a>, Barcelona, setembre de 2025</span></span></li>
+      </ul>
+    </details>
+
+    <!-- ========== POSTERS ========== -->
+    <!-- Newest first. Every entry ends with month and year in both languages. -->
+    <details class="section" id="posters">
+      <summary><h2><span lang="en" data-lang="en">Posters</span><span lang="ca" data-lang="ca">Pòsters</span></h2></summary>
+      <ul class="plain">
+        <li><span lang="en">“Actions of large finite abelian groups on product manifolds”</span>
+          <span class="meta">— <a lang="es" href="https://blogs.upm.es/et25/">XIII Encuentro de Jóvenes Topólogos</a>, Madrid,
+            <span lang="en" data-lang="en">October 2025</span><span lang="ca" data-lang="ca">octubre de 2025</span></span></li>
+        <li><span lang="en">“Actions of large finite abelian groups on product manifolds”</span>
+          <span class="meta">— <a lang="en" href="https://glancesmanifolds25.im.uj.edu.pl/">Glances@Manifolds</a>, Kraków,
+            <span lang="en" data-lang="en">September 2025</span><span lang="ca" data-lang="ca">setembre de 2025</span></span></li>
+        <li><span lang="en">“Discrete degree of symmetry”</span>
+          <span class="meta">— <a lang="en" href="https://www.math-stockholm.se/en/ytm2025-1.1350169">Young Topologists Meeting</a>, Stockholm,
+            <span lang="en" data-lang="en">June 2025</span><span lang="ca" data-lang="ca">juny de 2025</span></span></li>
+        <li><span lang="en">“Discrete degree of symmetry”</span>
+          <span class="meta">— <a lang="es" data-lang="en" href="https://jovenes2025.rsme.es/index_en.html">VII Congreso de Jóvenes Investigadores de la RSME</a><a lang="es" data-lang="ca" href="https://jovenes2025.rsme.es/">VII Congreso de Jóvenes Investigadores de la RSME</a>, Bilbao,
+            <span lang="en" data-lang="en">January 2025</span><span lang="ca" data-lang="ca">gener de 2025</span></span></li>
+        <li><span lang="en">“Discrete degree of symmetry”</span>
+          <span class="meta">—
+            <span lang="en" data-lang="en"><a href="https://www.icmat.es/congresos/2024/RTGF">Meeting of the Spanish Network of Geometry and Physics</a>, Madrid, November 2024</span>
+            <span lang="ca" data-lang="ca"><a href="https://www.icmat.es/congresos/2024/RTGF">Trobada de la Red Temática de Geometría y Física</a>, Madrid, novembre de 2024</span></span></li>
+        <li><span lang="en">“Discrete degree of symmetry”</span>
+          <span class="meta">— <a lang="es" href="https://sites.google.com/usal.es/et24/inicio">XII Encuentro de Jóvenes Topólogos</a>, Salamanca,
+            <span lang="en" data-lang="en">October 2024</span><span lang="ca" data-lang="ca">octubre de 2024</span></span></li>
+      </ul>
+    </details>
+
+    <!-- ========== TEACHING ========== -->
+    <details class="section" id="teaching">
+      <summary><h2><span lang="en" data-lang="en">Teaching</span><span lang="ca" data-lang="ca">Docència</span></h2></summary>
+      <ul class="plain" lang="en" data-lang="en">
+        <li><strong><a href="https://www.ub.edu/pladocent/?cod_giga=360156&amp;curs=2026&amp;idioma=CAT">Differential Geometry of Curves and Surfaces</a></strong> <span class="meta">— BSc Mathematics, Universitat de Barcelona, 2025–2026 and 2026–2027</span></li>
+        <li><strong><a href="https://www.ub.edu/pladocent/?cod_giga=360136&amp;curs=2025&amp;idioma=CAT">Introduction to Differential Calculus</a></strong> <span class="meta">— BSc Mathematics, Universitat de Barcelona, 2025–2026</span></li>
+        <li><strong><a href="https://www.fib.upc.edu/en/bachelors/bachelor-degree-bioinformatics/curriculum/syllabus/CAL-BBI">Calculus</a></strong> <span class="meta">— BSc Bioinformatics, Universitat Politècnica de Catalunya, 2024–2025</span></li>
+      </ul>
+      <ul class="plain" lang="ca" data-lang="ca">
+        <li><strong><a href="https://www.ub.edu/pladocent/?cod_giga=360156&amp;curs=2026&amp;idioma=CAT">Geometria Diferencial de Corbes i Superfícies</a></strong> <span class="meta">— Grau en Matemàtiques, Universitat de Barcelona, 2025–2026 i 2026–2027</span></li>
+        <li><strong><a href="https://www.ub.edu/pladocent/?cod_giga=360136&amp;curs=2025&amp;idioma=CAT">Introducció al Càlcul Diferencial</a></strong> <span class="meta">— Grau en Matemàtiques, Universitat de Barcelona, 2025–2026</span></li>
+        <li><strong><a href="https://www.fib.upc.edu/ca/graus/grau-en-bioinformatica/pla-destudis/assignatures/CAL-BBI">Càlcul</a></strong> <span class="meta">— Grau en Bioinformàtica, Universitat Politècnica de Catalunya, 2024–2025</span></li>
+      </ul>
+    </details>
+
+  </main>
+
+  <footer>
+    <!-- The year and the "last updated" month fill in automatically (see the script below).
+         The text written here is only a fallback. -->
+    © <span id="footer-year">2026</span> Jordi Garriga Puig ·
+    <span lang="en" data-lang="en">Last updated <span id="updated-en">November 2026</span></span><span lang="ca" data-lang="ca">Darrera actualització: <span id="updated-ca">novembre de 2026</span></span>
+  </footer>
+
+  <script>
+    // ---------- Collapsible sections ----------
+    // Open a collapsed section when its menu link is clicked or the page is
+    // loaded with #section in the address.
+    function openFromHash() {
+      var el = location.hash && document.querySelector(location.hash);
+      if (el && el.tagName === 'DETAILS') el.open = true;
+    }
+    window.addEventListener('hashchange', openFromHash);
+    document.querySelectorAll('nav a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        var el = document.querySelector(a.getAttribute('href'));
+        if (el && el.tagName === 'DETAILS') el.open = true;
+      });
+    });
+    openFromHash();
+
+    // ---------- Things that update themselves ----------
+    // 1. "Upcoming" tags disappear after the date in data-until (the event's last day).
+    var today = new Date().toISOString().slice(0, 10);
+    document.querySelectorAll('.tag[data-until]').forEach(function (tag) {
+      if (today > tag.dataset.until) tag.hidden = true;
+    });
+    // 2. Footer year.
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+    // 3. "Last updated": the month the server says this page last changed.
+    //    If the server doesn't say (document.lastModified is then "now"),
+    //    the month written in the footer is kept.
+    var modified = new Date(document.lastModified);
+    if (!isNaN(modified) && Date.now() - modified > 60 * 1000) {
+      var opts = { month: 'long', year: 'numeric' };
+      document.getElementById('updated-en').textContent = modified.toLocaleDateString('en-GB', opts);
+      document.getElementById('updated-ca').textContent = modified.toLocaleDateString('ca', opts);
+    }
+
+    // ---------- Keep section headings clear of the sticky menu ----------
+    // The menu can wrap onto several lines on phones, so jumps from the menu
+    // use its real height instead of a fixed offset.
+    var nav = document.querySelector('nav');
+    function syncScrollPadding() {
+      document.documentElement.style.scrollPaddingTop = (nav.offsetHeight + 8) + 'px';
+    }
+    syncScrollPadding();
+    window.addEventListener('resize', syncScrollPadding);
+    window.addEventListener('load', syncScrollPadding); // after fonts load
+
+    // ---------- Language switch (English / Catalan) ----------
+    var META = {
+      en: 'Jordi Garriga Puig, PhD candidate in Mathematics at the Universitat de Barcelona. Transformation groups and finite group actions on manifolds.',
+      ca: 'Jordi Garriga Puig, doctorand en Matemàtiques a la Universitat de Barcelona. Grups de transformacions i accions de grups finits en varietats.'
+    };
+    function setLang(lang) {
+      if (lang !== 'en') lang = 'ca';
+      document.documentElement.lang = lang;
+      document.querySelector('meta[name="description"]').content = META[lang];
+      document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+        b.setAttribute('aria-pressed', b.dataset.setLang === lang ? 'true' : 'false');
+      });
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+      syncScrollPadding(); // menu labels change width with the language
+      // Keep ?lang= in the address in sync, so reloading keeps the choice.
+      var url = new URL(location.href);
+      if (url.searchParams.has('lang') && url.searchParams.get('lang') !== lang) {
+        url.searchParams.set('lang', lang);
+        history.replaceState(null, '', url);
+      }
+    }
+    document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+      b.addEventListener('click', function () { setLang(b.dataset.setLang); });
+    });
+    (function () {
+      // Priority: ?lang=en in the address, then the visitor's last choice,
+      // then Catalan (the default).
+      var fromUrl = new URLSearchParams(location.search).get('lang');
+      var saved = null;
+      try { saved = localStorage.getItem('lang'); } catch (e) {}
+      setLang(fromUrl || saved || 'ca');
+    })();
+  </script>
+
+</body>
+</html>

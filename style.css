@@ -1,0 +1,230 @@
+/* ---------- Colors and fonts (edit here to restyle the whole site) ---------- */
+:root {
+  --bg: #fdfcf9;
+  --text: #1f1f1d;
+  --muted: #66645e;
+  --rule: #e4e1d8;
+  --accent: #8a2b1e;        /* deep academic red; used for links */
+  --serif: "EB Garamond", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a18;
+    --text: #e8e6df;
+    --muted: #a19f97;
+    --rule: #34332f;
+    --accent: #e08a72;
+  }
+}
+
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: currentColor; }
+
+/* ---------- Navigation ---------- */
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+  z-index: 10;
+}
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem 1.8rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+nav a { color: var(--muted); }
+nav a:hover { color: var(--text); border-bottom-color: transparent; }
+
+/* ---------- Layout ---------- */
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+/* ---------- Collapsible sections ---------- */
+.section { padding-top: 2.5rem; }
+.section > summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+.section > summary::-webkit-details-marker { display: none; }
+.section > summary h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.section > summary h2::after {
+  content: "–";
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--muted);
+  width: 1.2rem;
+  text-align: center;
+}
+.section:not([open]) > summary h2::after { content: "+"; }
+.section > summary:hover h2::after { color: var(--accent); }
+.section > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.section:not([open]) > summary h2 { margin-bottom: 0; }
+.section .meta { color: var(--muted); }
+p.meta { margin-top: 0; font-style: italic; }
+[hidden] { display: none !important; }
+
+/* ---------- Abstract toggles ---------- */
+.abstract { margin: 0.3rem 0 0.2rem; }
+.abstract > summary {
+  display: inline-block;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--accent);
+  user-select: none;
+}
+.abstract > summary::-webkit-details-marker { display: none; }
+.abstract > summary::before { content: "▸ "; }
+.abstract[open] > summary::before { content: "▾ "; }
+.abstract > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.abstract p {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  margin: 0.5rem 0 0.6rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--rule);
+  color: var(--text);
+}
+
+/* ---------- Languages: show only the active one ---------- */
+/* The switch uses data-lang, so lang="…" stays free to mark the real language
+   of text that shows in both versions (paper titles, Spanish conference names). */
+html[lang="en"] [data-lang="ca"],
+html[lang="ca"] [data-lang="en"] { display: none !important; }
+
+.lang-switch { display: flex; align-items: center; gap: 0.3rem; color: var(--rule); }
+.lang-switch button {
+  font: inherit;
+  letter-spacing: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--muted);
+}
+.lang-switch button:hover { color: var(--text); }
+.lang-switch button[aria-pressed="true"] { color: var(--accent); font-weight: 500; }
+
+h1, h2 { font-weight: 500; line-height: 1.2; }
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h3 { font-size: 1.15rem; font-weight: 600; margin: 1.5rem 0 0.3rem; }
+
+/* ---------- Header / About ---------- */
+.intro {
+  text-align: center;
+  padding-top: 3.5rem;
+}
+.portrait {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+}
+.intro h1 { font-size: 2.6rem; margin: 1rem 0 0.2rem; }
+.position { color: var(--muted); font-style: italic; margin: 0; }
+.contact-info {
+  font-style: normal;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 0.9rem 0 0;
+}
+/* Profile links (used by the commented-out ORCID/arXiv block in index.html) */
+.links {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.2rem;
+}
+.bio { margin-top: 2rem; }
+
+/* ---------- Publications ---------- */
+.pubs { list-style: none; padding-left: 0; margin: 0; }
+.pubs li { margin-bottom: 1.1rem; }
+.pubs .title { font-weight: 600; }
+.pubs .me { text-decoration: underline; text-underline-offset: 3px; }
+.pubs .venue { font-style: italic; }
+.pubs .extra { font-family: var(--sans); font-size: 0.78rem; margin-left: 0.3rem; }
+.pubs .extra a { margin-right: 0.6rem; }
+
+/* ---------- Talks, posters and teaching ---------- */
+.plain { list-style: none; padding: 0; margin: 0; }
+.plain li { margin-bottom: 0.5rem; }
+.plain .meta { color: var(--muted); }
+.tag {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.05rem 0.35rem;
+  vertical-align: 0.15em;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  padding: 2rem 1rem 3rem;
+  border-top: 1px solid var(--rule);
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 560px) {
+  body { font-size: 1.1rem; }
+  .intro h1 { font-size: 2.1rem; }
+  /* Tighter menu so it takes less of the screen */
+  nav ul { padding: 0.6rem 0.75rem; gap: 0.35rem 1.1rem; font-size: 0.72rem; letter-spacing: 0.04em; }
+}
